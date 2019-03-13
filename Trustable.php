@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Services\Trust1;
+namespace App\Services\Trust;
 
-use App\Services\Trust1\Facades\Trust;
-use App\Services\Trust1\Models\Permission;
-use App\Services\Trust1\Models\Role;
+use App\Services\Trust\Facades\Trust;
+use App\Services\Trust\Models\Permission;
+use App\Services\Trust\Models\Role;
 
 trait Trustable
 {

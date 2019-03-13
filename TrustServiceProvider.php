@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Services\Trust1;
+namespace App\Services\Trust;
 
-use App\Services\Trust1\Facades\Trust;
-use App\Services\Trust1\Models\Permission;
-use App\Services\Trust1\Models\Role;
-use App\Services\Trust1\Observers\PermissionObserver;
-use App\Services\Trust1\Observers\RoleObserver;
-use App\Services\Trust1\Observers\UserObserver;
+use App\Services\Trust\Facades\Trust;
+use App\Services\Trust\Models\Permission;
+use App\Services\Trust\Models\Role;
+use App\Services\Trust\Observers\PermissionObserver;
+use App\Services\Trust\Observers\RoleObserver;
+use App\Services\Trust\Observers\UserObserver;
 use Illuminate\Support\ServiceProvider;
 
 class TrustServiceProvider extends ServiceProvider

@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Services\Trust1\Observers;
+namespace App\Services\Trust\Observers;
 
-use App\Services\Trust1\Facades\Trust;
-use App\Services\Trust1\Models\Role;
+use App\Services\Trust\Facades\Trust;
+use App\Services\Trust\Models\Role;
 
 class RoleObserver
 {

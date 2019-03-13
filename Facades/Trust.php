@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\Trust1\Facades;
+namespace App\Services\Trust\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static reload($model = null)
  * @method static string authUser()
  *
- * @see \App\Services\Trust1\TrustService
+ * @see \App\Services\Trust\TrustService
  */
 class Trust extends Facade
 {

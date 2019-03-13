@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Services\Trust1\Models;
+namespace App\Services\Trust\Models;
 
-use App\Services\Trust1\Facades\Trust;
+use App\Services\Trust\Facades\Trust;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 

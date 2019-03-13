@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Services\Trust1;
+namespace App\Services\Trust;
 
-use App\Services\Trust1\Models\Permission;
-use App\Services\Trust1\Models\Role;
+use App\Services\Trust\Models\Permission;
+use App\Services\Trust\Models\Role;
 use Illuminate\Foundation\Auth\User;
 
 class TrustService
