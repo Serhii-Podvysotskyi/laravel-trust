@@ -2,6 +2,6 @@
 
 return [
     'user' => [
-        'model' => App\Models\User::class
+        'model' => App\User::class
     ]
 ];

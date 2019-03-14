@@ -16,7 +16,7 @@ class TrustService
     public function __construct($app)
     {
         $this->app = $app;
-        $this->user = config('services.trust.user.model', User::class);
+        $this->user = config('trust.user.model', User::class);
         $this->users = [];
         $this->roles = [];
     }

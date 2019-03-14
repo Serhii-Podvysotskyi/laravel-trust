@@ -13,7 +13,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "podvysotsky\\laravel-trust\\TrustServiceProvider"
+                "Podvysotsky\\Laravel\\Trust\\TrustServiceProvider"
             ]
         }
     },

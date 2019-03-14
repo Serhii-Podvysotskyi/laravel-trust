@@ -17,6 +17,7 @@ class TrustServiceProvider extends ServiceProvider
         $this->app->singleton('trust', function ($app) {
             return new TrustService($app);
         });
+        $this->loadRoutesFrom(__DIR__ . '/routes.php');
         Role::observe(RoleObserver::class);
         Permission::observe(PermissionObserver::class);
         Trust::authUser()::observe(UserObserver::class);
@@ -24,8 +25,11 @@ class TrustServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        $this->loadRoutesFrom(__DIR__ . '/routes.php');
-        $this->loadMigrationsFrom(__DIR__ . '/migrations');
-        $this->mergeConfigFrom(__DIR__ . './config.php', 'services.trust');
+        $this->publishes([
+            __DIR__ . '/migrations' => database_path('migrations')
+        ], 'migrations');
+        $this->publishes([
+            __DIR__ . '/config.php' => config_path('trust.php')
+        ], 'config');
     }
 }
