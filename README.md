@@ -17,14 +17,10 @@ Install composer package
     composer install
 
 
-Publish Service Provider
-
-    php artisan vendor:publish --tag=trust
-
 Make Migrations
 
     php artisan migrate
 
-Update to User Model
+Update User Model
 
     use Trustable;
