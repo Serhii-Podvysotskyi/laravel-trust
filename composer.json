@@ -1,7 +1,13 @@
 {
     "name": "podvysotsky/laravel-trust",
     "description": "Laravel Trust Component",
+    "keywords": [
+        "trust",
+        "laravel"
+    ],
     "license": "Apache License 2.0",
+    "type": "library",
+    "homepage": "https://github.com/Serhii-Podvysotskyi/laravel-trust",
     "authors": [
         {
             "name": "Serhii Podvysotskyi",
@@ -9,7 +15,9 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "php": "^7.1.3"
+    },
     "extra": {
         "laravel": {
             "providers": [

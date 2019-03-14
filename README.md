@@ -14,7 +14,7 @@ Update composer.json
 
 Install composer package
 
-    composer install
+    composer update
 
 
 Make Migrations
