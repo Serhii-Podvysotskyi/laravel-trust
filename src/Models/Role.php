@@ -2,7 +2,7 @@
 
 namespace Podvysotsky\Laravel\Trust\Models;
 
-use Podvysotsky\Laravel\Trust\Facades\Trust;
+use Illuminate\Foundation\Auth\User;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -22,6 +22,6 @@ class Role extends Model
     }
 
     public function users() {
-        return $this->belongsToMany(Trust::user(), 'user_roles');
+        return $this->belongsToMany(User::class, 'user_roles');
     }
 }

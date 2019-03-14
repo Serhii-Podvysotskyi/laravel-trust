@@ -9,24 +9,18 @@ use Illuminate\Foundation\Auth\User;
 class TrustService
 {
     protected $app;
-    protected $user;
     protected $users;
     protected $roles;
 
     public function __construct($app)
     {
         $this->app = $app;
-        $this->user = config('trust.user.model', User::class);
         $this->users = [];
         $this->roles = [];
     }
 
     protected function auth() {
         return $this->app['auth'];
-    }
-
-    public function authUser() {
-        return $this->user;
     }
 
     public function getRoles($user = null) {
@@ -40,12 +34,12 @@ class TrustService
             if (array_key_exists($user, $this->users) && array_key_exists('roles', $this->users[$user])) {
                 return $this->users[$user]['roles'];
             }
-            $user = $this->user::find($user);
+            $user = User::find($user);
             if (is_null($user)) {
                 return [];
             }
         }
-        if ($user instanceof $this->user) {
+        if ($user instanceof User) {
             if (!array_key_exists($user->id, $this->users)) {
                 $this->users[$user->id] = [];
             }
@@ -154,7 +148,7 @@ class TrustService
             $this->users = [];
             $this->roles = [];
         }
-        if ($model instanceof $this->user) {
+        if ($model instanceof User) {
             if (array_key_exists($model->id, $this->users)) {
                 unset($this->users[$model]);
             }
@@ -191,12 +185,12 @@ class TrustService
             if (array_key_exists($user, $this->users) && array_key_exists('permissions', $this->users[$user])) {
                 return $this->users[$user]['permissions'];
             }
-            $user = $this->user::find($user);
+            $user = User::find($user);
             if (is_null($user)) {
                 return null;
             }
         }
-        if ($user instanceof $this->user) {
+        if ($user instanceof User) {
             if (!array_key_exists($user->id, $this->users)) {
                 $this->users[$user->id] = [];
             }

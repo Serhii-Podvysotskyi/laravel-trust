@@ -14,7 +14,10 @@
         "laravel": {
             "providers": [
                 "Podvysotsky\\Laravel\\Trust\\TrustServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "Trust": "Podvysotsky\\Laravel\\Trust\\Facades\\Trust"
+            }
         }
     },
     "autoload": {

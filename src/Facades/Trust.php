@@ -10,9 +10,8 @@ use Illuminate\Support\Facades\Facade;
  * @method static boolean hasPermissions($permission, $model = null)
  * @method static array getPermissions($model = null)
  * @method static reload($model = null)
- * @method static string authUser()
  *
- * @see \App\Services\Trust\TrustService
+ * @see Podvysotsky\Laravel\Trust\TrustService
  */
 class Trust extends Facade
 {
