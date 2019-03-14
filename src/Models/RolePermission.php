@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\Trust\Models;
+namespace Podvysotsky\Laravel\Trust\Models;
 
 use Illuminate\Database\Eloquent\Relations\Pivot;
 

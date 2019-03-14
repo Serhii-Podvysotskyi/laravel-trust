@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Services\Trust\Observers;
+namespace Podvysotsky\Laravel\Trust\Observers;
 
-use App\Services\Trust\Facades\Trust;
-use App\Services\Trust\Models\Role;
+use Podvysotsky\Laravel\Trust\Facades\Trust;
+use Podvysotsky\Laravel\Trust\Models\Role;
 
 class RoleObserver
 {

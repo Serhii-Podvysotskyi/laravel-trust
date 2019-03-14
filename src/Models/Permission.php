@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Services\Trust\Models;
+namespace Podvysotsky\Laravel\Trust\Models;
 
-use App\Services\Trust\Facades\Trust;
+use Podvysotsky\Laravel\Trust\Facades\Trust;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 

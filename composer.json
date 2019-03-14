@@ -1,0 +1,25 @@
+{
+    "name": "podvysotsky/laravel-trust",
+    "description": "Laravel Trust Component",
+    "license": "Apache License 2.0",
+    "authors": [
+        {
+            "name": "Serhii Podvysotskyi",
+            "email": "podvysotskyi@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "podvysotsky\\laravel-trust\\TrustServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Podvysotsky\\Laravel\\Trust\\": "src/"
+        }
+    }
+}

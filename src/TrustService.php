@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Services\Trust;
+namespace Podvysotsky\Laravel\Trust;
 
-use App\Services\Trust\Models\Permission;
-use App\Services\Trust\Models\Role;
+use Podvysotsky\Laravel\Trust\Models\Permission;
+use Podvysotsky\Laravel\Trust\Models\Role;
 use Illuminate\Foundation\Auth\User;
 
 class TrustService

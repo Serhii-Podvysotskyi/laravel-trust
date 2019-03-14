@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\Trust\Facades;
+namespace Podvysotsky\Laravel\Trust\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

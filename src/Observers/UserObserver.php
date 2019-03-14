@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Services\Trust\Observers;
+namespace Podvysotsky\Laravel\Trust\Observers;
 
-use App\Services\Trust\Facades\Trust;
+use Podvysotsky\Laravel\Trust\Facades\Trust;
 
 class UserObserver
 {
